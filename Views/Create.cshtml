@@ -1,0 +1,16 @@
+﻿@model Document
+@using DocumentPlatform.Models
+
+<h2>Upload Document</h2>
+
+<form asp-action="Create" enctype="multipart/form-data">
+    <div>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" />
+    </div>
+    <div>
+        <label for="file">Document File</label>
+        <input type="file" name="file" required />
+    </div>
+    <button type="submit">Upload</button>
+</form>

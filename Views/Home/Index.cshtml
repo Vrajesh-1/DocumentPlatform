@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Document>
+@using DocumentPlatform.Models
+
+<h2>Your Documents</h2>
+<a asp-action="Create">Upload New Document</a>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doc in Model)
+        {
+                <tr>
+                    <td>@doc.Title</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@doc.Id">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@doc.Id">Delete</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>
