@@ -1,5 +1,3 @@
----
-
 # Document Platform
 
 **Document Platform** is a web application designed to manage and organize documents effectively. Built with ASP.NET Core, this project leverages modern web technologies to provide a robust and user-friendly interface for document management.
@@ -18,5 +16,3 @@
 - **Database**: SQL Server with Entity Framework Core
 - **Frontend**: HTML, CSS, and JavaScript
 - **Authentication**: ASP.NET Identity
-
----
